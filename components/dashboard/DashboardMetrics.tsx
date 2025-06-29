@@ -38,7 +38,7 @@ export function DashboardMetrics() {
       {metrics.map((metric) => {
         const Icon = metric.icon;
         const changeColor = metric.changeType === 'positive' ? 'text-green-600' : 
-                           metric.changeType === 'negative' ? 'text-red-600' : 'text-amber-600';
+                           metric.changeType === 'neutral' ? 'text-gray-600' : 'text-red-600';
         
         return (
           <Card key={metric.title}>
